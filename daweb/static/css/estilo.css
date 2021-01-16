@@ -1,0 +1,87 @@
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+body
+{
+    text-align: center;
+    height: auto;
+}
+
+
+.alert {
+    max-width:600px; 
+    top:10%;
+    background-color: white;
+    }
+
+    .alert .header {
+    background-color: #16851c;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding: 10px;
+    }
+
+    .alert .body{
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid grey;
+    }
+    
+    .alert .footer{
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    }
+
+
+    /* CARRUSEL */
+.carousel-inner{
+    width: 290px;
+    height: 290px;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  /* Botones */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -25px;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 9px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+  }
+  
+  * {box-sizing:border-box}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(31, 27, 27, 0.335);
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

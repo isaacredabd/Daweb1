@@ -1,0 +1,53 @@
+<!--
+    <div class="mx-auto m-3 p-3">
+    <div class="card">
+        <div class="card-header bg-success">
+            <h1>Agregar clasificación</h1>
+        </div>
+       <div class="card-body shadow rounded" >
+            <form action="/artesanias/clasificacion/guardar" 
+                method="POST">
+                <label for="descripcion">Clasificacion:</label>
+                <input type="text" name="descripcion" id="descripcion">
+                <br>
+                <label for="padre">Depende de:</label>
+                <select name="padre" id="padre">
+                    <option value="0">Ninguno</option>
+                      <option value="{id}">{descripcion}</option>
+                 </select>
+            </form>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="mx-auto m-3 p-3">
+    <div class="card" style="width: 500px;">
+        <div class="centrado card-header bg-success " >
+            <h5>Agregar Roles</h5>
+        </div>
+<div class="card-body shadow rounded" >
+            <form action="/artesanias/roles/guardar" 
+                method="POST">
+                <div class="row">
+  <div class="col-sm-4">
+                        <label for="descripcion">ROL: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" 
+                        name="descripcion" id="descripcion"
+                        required maxlength="50" >
+                    </div>
+</div>
+                
+
+ </div>
+
+                <div style="text-align: center;">
+                    <input type="submit" class="btn btn-primary" value="Guardar">
+                </div>
+   </form>
+        </div>
+    </div>
+</div>
+

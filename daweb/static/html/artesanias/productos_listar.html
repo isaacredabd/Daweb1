@@ -1,0 +1,50 @@
+<!--LISTADO_PRODUCTOS-->
+<div class="m-3 p-3" style="width: 520px;  float:left;">
+    <input type="hidden" value="{imagenes}" id="{id}" class="hidden_images">
+    <div class="card">
+        <div class="centrado card-header bg-success">
+            <h5>{producto}</h5>
+        </div>
+        <div class="card-body shadow rounded">
+            <div class="row" style="height:300px;">
+                <div class="col-xs-12 col-sm-4">
+                    <h6>{descripcion}</h6>
+                </div>
+                <div class="col-xs-12  col-sm-8 images" id="divImages_{id}">
+                    <div id="carousel{id}" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                  
+                          {carousel}
+                   
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel{id}" role="button" data-slide="prev">
+                            <span class="prev">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel{id}" role="button" data-slide="next">
+                            <span class="next">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12  col-sm-4 centrado">
+                    <strong>Precio unitario</strong><br>
+                    <h4>${precio}</h4>
+                </div>
+                <div class="col-xs-12  col-sm-8 derecho">
+                    <strong>Cantidad: </strong><input type="number" id="{id}" value="1" size="3" />
+                    <a href="/artesanias/pedido/agregar"> <img src="/static/img/canasto.png" alt="canasto" height="35">
+                    </a>
+                </div>
+            </div>
+
+            
+
+
+        </div>
+
+
+    </div>
+</div>
+<!--LISTADO_PRODUCTOS-->
+<script></script>
